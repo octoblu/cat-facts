@@ -11,7 +11,7 @@ app.all '/api/cat-fact', (req, res) =>
   res.send "
   <?xml version=\"1.0\" encoding=\"UTF-8\" ?>
   <Response>
-      <Say>#{_.sample(facts)}</Say>
+      <Say>Did you know, #{_.sample(facts)}</Say>
   </Response>"
 
 app.listen(3005);
