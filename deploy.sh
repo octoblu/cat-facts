@@ -35,7 +35,7 @@ function rsync_project(){
 }
 
 function restart_forever(){
-  over_ssh_do "forever restart \
+  over_ssh_do "forever start \
     -l $LOG_DIR/forever.log \
     -o $LOG_DIR/rdio-sync.log \
     -e $LOG_DIR/rdio-sync.log \
