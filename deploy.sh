@@ -2,7 +2,7 @@
 start=`date +%s`
 
 HOST="deploy@rdio-sync.com"
-REPO="https://github.com:octoblu/cat-facts.git"
+REPO="https://github.com/octoblu/cat-facts.git"
 APP_DIR=/home/deploy/apps/cat-facts
 LOG_DIR=$APP_DIR/log
 CURRENT_DIR=$APP_DIR/current
