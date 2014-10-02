@@ -1,5 +1,6 @@
 express = require 'express'
 morgan  = require 'morgan'
+#facts = require './facts'
 
 app = express()
 app.use(morgan('combined'))
