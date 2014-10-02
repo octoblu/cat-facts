@@ -19,6 +19,7 @@
   "homepage": "https://github.com/octoblu/cat-facts",
   "dependencies": {
     "express": "^4.9.5",
+    "lodash": "^2.4.1",
     "morgan": "^1.3.2"
   }
 }
