@@ -77,11 +77,11 @@ over_ssh_do "git clone --depth=1 $REPO $DESTINATION_DIR"
 echo "npm install"
 over_ssh_do "cd $DESTINATION_DIR && npm install --production"
 
-echo "gzipping assets"
-over_ssh_do "cd $DESTINATION_DIR/public && \
-  for f in \$(find . -type f); do \
-    gzip -9 -c \$f > \$f.gz; \
-  done"
+# echo "gzipping assets"
+# over_ssh_do "cd $DESTINATION_DIR/public && \
+#   for f in \$(find . -type f); do \
+#     gzip -9 -c \$f > \$f.gz; \
+#   done"
 
 echo "linking current"
 over_ssh_do "ln -nsf $DESTINATION_DIR $CURRENT_DIR"
