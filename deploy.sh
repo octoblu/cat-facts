@@ -41,7 +41,7 @@ function restart_forever(){
     -e $LOG_DIR/rdio-sync.log \
     --append \
     -p $APP_DIR/forever \
-    -c coffee $CURRENT_DIR/server.coffee"
+    -c coffee $CURRENT_DIR/app.coffee"
 }
 
 function rollback(){
